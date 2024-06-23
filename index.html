@@ -15,7 +15,7 @@
         header {
             background-color: #1a73e8;
             color: white;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -56,9 +56,6 @@
             padding: 1rem 0;
             background-color: #333;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         ul {
             list-style: none;
@@ -75,6 +72,38 @@
         ul li a:hover {
             color: #ffeb3b;
         }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 0;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+        .feature {
+            flex: 1;
+            margin: 0 1rem;
+            padding: 1rem;
+            background: #e3f2fd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -90,10 +119,32 @@
     <a href="#courses">Courses</a>
     <a href="#tools">Tools</a>
     <a href="#articles">Articles</a>
-    <a href="#examples">Examples</a>
 </nav>
 
+<section class="hero">
+    <h1>Revolutionizing Healthcare with AI</h1>
+    <p>Discover the power of AI-driven solutions in medicine</p>
+</section>
+
 <div class="container">
+    <section class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/100" alt="AI Integration">
+            <h3>AI Integration</h3>
+            <p>Seamlessly integrate AI into your medical practice.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/100" alt="Advanced Analytics">
+            <h3>Advanced Analytics</h3>
+            <p>Gain insights with cutting-edge data analytics.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/100" alt="Patient Care">
+            <h3>Enhanced Patient Care</h3>
+            <p>Improve patient outcomes with AI assistance.</p>
+        </div>
+    </section>
+
     <section id="links">
         <h2>Key Links</h2>
         <ul>
@@ -139,12 +190,6 @@
             <li><a href="https://jamanetwork.com/journals/jama/fullarticle/2777031" target="_blank">Creation and Adoption of LLMs in Medicine (JAMA)</a></li>
             <li><a href="https://arxiv.org/abs/2302.02856" target="_blank">Med-PaLM: Google Research’s Medical LLM</a></li>
         </ul>
-    </section>
-
-    <section id="examples">
-        <h2>Examples</h2>
-        <p>Discussing Chat GPT's potential with physicians.</p>
-        <p>Develop a 2-month course with twice-weekly, 1.5-hour sessions on LLM in medicine.</p>
     </section>
 </div>
 
